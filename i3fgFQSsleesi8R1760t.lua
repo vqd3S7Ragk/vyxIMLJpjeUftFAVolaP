@@ -1,35 +1,23 @@
 --my dumbass forgot to save any changes i made, ima rebuild from the ground up anyways
 
-local Services = {
-    Players = game:GetService("Players"),
-    RunService = game:GetService("RunService"),
-    GuiService = game:GetService("GuiService"),
-    UserInputService = game:GetService("UserInputService"),
-    HttpService = game:GetService("HttpService"),
-    ReplicatedStorage = game:GetService("ReplicatedStorage"),
-    Lighting = game:GetService("Lighting"),
-    SoundService = game:GetService("SoundService"),
-    Workspace = game:GetService("Workspace"),
-    TeleportService = game:GetService("TeleportService"),
-    TweenService = game:GetService("TweenService"),
-    mfloor = math.floor,
-    mclamp = math.clamp,
-    mabs = math.abs,
-    mrandom = math.random,
-    tick = tick
-}
+local Players          = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local RunService       = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Workspace        = game:GetService("Workspace")
+local TeleportService  = game:GetService("TeleportService")
+local Lighting         = game:GetService("Lighting")
+local TweenService     = game:GetService("TweenService")
+local SoundService     = game:GetService("SoundService")
+local GuiService        = game:GetService("GuiService")
+local HttpService       = game:GetService("HttpService")
 
-local Players = Services.Players
-local RunService = Services.RunService
-local GuiService = Services.GuiService
-local UserInputService = Services.UserInputService
-local HttpService = Services.HttpService
-local ReplicatedStorage = Services.ReplicatedStorage
-local Lighting = Services.Lighting
-local SoundService = Services.SoundService
-local Workspace = Services.Workspace
-local TeleportService = Services.TeleportService
-local TweenService = Services.TweenService
+local mfloor  = math.floor
+local mclamp  = math.clamp
+local mabs    = math.abs
+local mrandom = math.random
+local tick    = tick
+
 
 --REFS
 local plr      = Players.LocalPlayer
