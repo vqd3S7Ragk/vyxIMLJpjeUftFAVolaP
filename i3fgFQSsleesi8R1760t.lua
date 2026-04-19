@@ -913,7 +913,7 @@ local Window = Library:CreateWindow({
     MenuFadeTime = 0.2
 })
 
-local MainTab = Window:CreateTab("Main")
+local MainTab = Window:AddTab("Main")
 local flybox = MainTab:AddLeftGroupbox("Fly")
 flybox:AddToggle("FlyToggle", {
     Text = "Fly",
@@ -1007,7 +1007,7 @@ skidtourturebox:AddDropdown("CbringTargets", {
         end
     end,
 })
-local RPGTab = Window:CreateTab("RPG")
+local RPGTab = Window:AddTab("RPG")
 local rpgbox = RPGTab:AddLeftGroupbox("RPG")
 rpgbox:AddToggle("EnableRPG", {
     Text = "Enable RPG",
@@ -1117,7 +1117,7 @@ targetingbox:AddInput("CustomText", {
         states.customText = value
     end,
 })
-local VisualsTab = Window:CreateTab("Visuals")
+local VisualsTab = Window:AddTab("Visuals")
 local espbox = VisualsTab:AddLeftGroupbox("ESP")
 espbox:AddToggle("ESPEnabled", {
     Text = "Enable ESP",
@@ -1128,7 +1128,7 @@ espbox:AddToggle("ESPEnabled", {
     end,
 })
 
-local settingsTab = Window:CreateTab("Settings")
+local settingsTab = Window:AddTab("Settings")
 local MenuGroup = settingsTab:AddLeftGroupbox("Menu")
 MenuGroup:AddButton("Unload", function() Library:Unload() end)
 MenuGroup:AddButton("Load Old RPG", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/vqd3S7Ragk/ldCGQ9GS7GjrS1hu7Dep/refs/heads/main/ldCGQ9GS7GjrS1hu7Dep.lua"))() end)
