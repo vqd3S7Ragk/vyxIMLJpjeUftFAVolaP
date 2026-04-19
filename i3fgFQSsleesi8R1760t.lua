@@ -1131,7 +1131,7 @@ espbox:AddToggle("ESPEnabled", {
 local settingsTab = Window:CreateTab("Settings")
 local MenuGroup = settingsTab:AddLeftGroupbox("Menu")
 MenuGroup:AddButton("Unload", function() Library:Unload() end)
-MenuGroup:AddButton("Load Old RPG", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Freshwaffle/a4T6J2Bx6Y/refs/heads/main/rKlyIixOy7.lua"))() end)
+MenuGroup:AddButton("Load Old RPG", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/vqd3S7Ragk/ldCGQ9GS7GjrS1hu7Dep/refs/heads/main/ldCGQ9GS7GjrS1hu7Dep.lua"))() end)
 MenuGroup:AddLabel("Menu bind"):AddKeyPicker("MenuKeybind", { Default = "None", NoUI = true, Text = "Menu keybind" })
 MenuGroup:AddToggle("ShowKeybinds", {
     Text = "Show Keybinds",
@@ -1187,3 +1187,4 @@ UserInputService.InputEnded:Connect(function(input)
         isMouseHeld = false
     end
 end)
+
