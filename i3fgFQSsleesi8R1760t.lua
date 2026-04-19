@@ -19,6 +19,18 @@ local Services = {
     tick = tick
 }
 
+local Players = Services.Players
+local RunService = Services.RunService
+local GuiService = Services.GuiService
+local UserInputService = Services.UserInputService
+local HttpService = Services.HttpService
+local ReplicatedStorage = Services.ReplicatedStorage
+local Lighting = Services.Lighting
+local SoundService = Services.SoundService
+local Workspace = Services.Workspace
+local TeleportService = Services.TeleportService
+local TweenService = Services.TweenService
+
 --REFS
 local plr      = Players.LocalPlayer
 local char     = plr.Character or plr.CharacterAdded:Wait()
